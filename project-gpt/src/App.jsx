@@ -1,12 +1,21 @@
-import { useState } from 'react'
-
-import './App.css'
-
-import React from 'react'
+import './App.css';
+import React from 'react';
+import {Footer, Blog, Possibility, Features, WhatGPT3, Header} from './containers';
+import { CTA, Brand, Navbar} from './components';
 
 function App() {
   return (
-    <div>Hello World</div>
+    <div className='App'>
+     <div className='gradient__bg'>
+          <Navbar />
+          <Header />
+     </div>
+        <Brand />
+        <WhatGPT3 />
+        <Features />
+        <Possibility />
+        <CTA />
+    </div>
   );
 }
 
